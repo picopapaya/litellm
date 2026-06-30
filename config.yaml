@@ -1,5 +1,5 @@
 model_list:
-  - model_name: redhatai-gemma4-26b-a4b-it
+  - model_name: redhatai-gemma4-26b-a4b-q8-it-sglang
     litellm_params:
       model: hosted_vllm/RedHatAI/gemma-4-26B-A4B-it-FP8-Dynamic
       api_base: http://redhatai-gemma4-26b-a4b-q8-it-sglang:30000/v1
@@ -7,7 +7,7 @@ model_list:
     model_info:
       max_input_tokens: 262144
 
-  - model_name: google-gemma4-26b-a4b-it
+  - model_name: google-gemma4-26b-a4b-bf16-it-sglang
     litellm_params:
       model: hosted_vllm/google/gemma-4-26B-A4B-it
       api_base: http://google-gemma4-26b-a4b-it-bf16-sglang:30000/v1
