@@ -8,7 +8,7 @@ services:
       POSTGRES_PASSWORD: litellm
       POSTGRES_DB: litellm
     volumes:
-      - /home/shared/litellm-db:/var/lib/postgresql/data
+      - ${DATA_DIR:-/home/shared}/litellm-db:/var/lib/postgresql/data
     networks:
       - llm-net
     healthcheck:
