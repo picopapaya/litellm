@@ -1,0 +1,37 @@
+model_list:
+  - model_name: gemma4
+    litellm_params:
+      model: hosted_vllm/nvidia/Gemma-4-31B-IT-NVFP4
+      api_base: http://gemma4-sglang-gb10:30000/v1
+      api_key: "none"
+    model_info:
+      max_input_tokens: 262144
+
+  - model_name: redhatai-gemma4-26b-a4b-it
+    litellm_params:
+      model: hosted_vllm/RedHatAI/gemma-4-26B-A4B-it-FP8-Dynamic
+      api_base: http://redhatai-gemma4-26b-a4b-q8-it-sglang:30000/v1
+      api_key: "none"
+    model_info:
+      max_input_tokens: 262144
+
+  - model_name: google-gemma4-26b-a4b-it
+    litellm_params:
+      model: hosted_vllm/google/gemma-4-26B-A4B-it
+      api_base: http://google-gemma4-26b-a4b-it-bf16-sglang:30000/v1
+      api_key: "none"
+    model_info:
+      max_input_tokens: 65536
+
+  # Template for adding more models:
+  # - model_name: my-next-model
+  #   litellm_params:
+  #     model: openai/<model-id-served-by-sglang>
+  #     api_base: http://<container-name>:<port>/v1
+  #     api_key: "none"
+
+router_settings:
+  routing_strategy: simple-shuffle   # round-robins across replicas of same model_name
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY
