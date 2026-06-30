@@ -1,0 +1,27 @@
+# Secrets
+.env
+*.env
+
+# Claude Code project config
+.claude/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker build artifacts
+*.log
