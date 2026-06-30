@@ -1,12 +1,4 @@
 model_list:
-  - model_name: gemma4
-    litellm_params:
-      model: hosted_vllm/nvidia/Gemma-4-31B-IT-NVFP4
-      api_base: http://gemma4-sglang-gb10:30000/v1
-      api_key: "none"
-    model_info:
-      max_input_tokens: 262144
-
   - model_name: redhatai-gemma4-26b-a4b-it
     litellm_params:
       model: hosted_vllm/RedHatAI/gemma-4-26B-A4B-it-FP8-Dynamic

@@ -14,7 +14,6 @@ Configured in `config.yaml`:
 
 | Model name | Backend container | Weights |
 |---|---|---|
-| `gemma4` | `gemma4-sglang-gb10` | nvidia/Gemma-4-31B-IT-NVFP4 |
 | `google-gemma4-26b-a4b-it` | `google-gemma4-26b-a4b-it-bf16-sglang` | google/gemma-4-26B-A4B-it (BF16 + FP8 on-the-fly) |
 | `redhatai-gemma4-26b-a4b-it` | `redhatai-gemma4-26b-a4b-q8-it-sglang` | RedHatAI/gemma-4-26B-A4B-it-FP8-Dynamic |
 
