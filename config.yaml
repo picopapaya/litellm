@@ -10,7 +10,7 @@ model_list:
   - model_name: google-gemma4-26b-a4b-bf16-it-sglang
     litellm_params:
       model: hosted_vllm/google/gemma-4-26B-A4B-it
-      api_base: http://google-gemma4-26b-a4b-it-bf16-sglang:30000/v1
+      api_base: http://google-gemma4-26b-a4b-bf16-it-sglang:30000/v1
       api_key: "none"
     model_info:
       max_input_tokens: 65536
